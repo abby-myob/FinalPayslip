@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayslipLogic", "PayslipLogic\PayslipLogic.csproj", "{AAB9BCA9-3157-4283-AAF7-937256EB561A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayslipTest", "PayslipTest\PayslipTest.csproj", "{D8DF13B9-1C5C-40ED-A5B7-C1B54BF87E8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayslipConsole", "PayslipConsole\PayslipConsole.csproj", "{66DAA92D-434A-4D08-B575-53563B8EC6EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAB9BCA9-3157-4283-AAF7-937256EB561A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB9BCA9-3157-4283-AAF7-937256EB561A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB9BCA9-3157-4283-AAF7-937256EB561A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB9BCA9-3157-4283-AAF7-937256EB561A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8DF13B9-1C5C-40ED-A5B7-C1B54BF87E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8DF13B9-1C5C-40ED-A5B7-C1B54BF87E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8DF13B9-1C5C-40ED-A5B7-C1B54BF87E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8DF13B9-1C5C-40ED-A5B7-C1B54BF87E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DAA92D-434A-4D08-B575-53563B8EC6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DAA92D-434A-4D08-B575-53563B8EC6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DAA92D-434A-4D08-B575-53563B8EC6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DAA92D-434A-4D08-B575-53563B8EC6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
