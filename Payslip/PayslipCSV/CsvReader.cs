@@ -21,18 +21,70 @@ namespace PayslipConsole
 
             foreach (var line in Csv.CsvReader.ReadFromText(csvReader))
             {
-                var salary = Int32.Parse(line[2]);
-                var super = Int32.Parse(line[3]);
+                var salary = Decimal.Parse(line[2]);
+                var superString = line[3].TrimEnd('%');
+                var super = Decimal.Parse(superString);
 
                 var paymentMonth = line[4];
-                var month = paymentMonth.Split("-");
-                var start = Convert.ToDateTime(month[0]);
-                var end = Convert.ToDateTime(month[1]);
+                var month = ConvertToDateTime(paymentMonth);
                 
-                people.Add(new Person(line[0], line[1], salary, super, start, end));
+                people.Add(new Person(line[0], line[1], salary, super, month[0], month[1]));
             }
 
             return people;
+        }
+
+        private DateTime[] ConvertToDateTime(string paymentMonth) 
+        {
+            var month = paymentMonth.Split(" - ");
+            var start = month[0].Split(' ')[0];
+            var startMonth = 1;
+            var endDay = 28;
+
+            switch (start)
+            {
+                case "January":
+                    startMonth = 1;
+                    break;
+                case "February":
+                    startMonth = 2;
+                    break;
+                case "March":
+                    startMonth = 3;
+                    break;
+                case "April":
+                    startMonth = 4;
+                    break;
+                case "May":
+                    startMonth = 5;
+                    break;
+                case "June":
+                    startMonth = 6;
+                    break;
+                case "July":
+                    startMonth = 7;
+                    break;
+                case "August":
+                    startMonth = 8;
+                    break;
+                case "September":
+                    startMonth = 9;
+                    break;
+                case "October":
+                    startMonth = 10;
+                    break;
+                case "November":
+                    startMonth = 11;
+                    break;
+                case "December":
+                    startMonth = 12;
+                    break;
+            }
+            
+            var startDateTime = new DateTime(2020, startMonth, 1);
+            var endDateTime = new DateTime(2020, startMonth, endDay);
+            
+            return new[]{startDateTime, endDateTime};
         }
     }
 }
