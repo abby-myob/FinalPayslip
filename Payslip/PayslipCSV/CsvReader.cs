@@ -36,11 +36,11 @@ namespace PayslipConsole
 
         private DateTime[] ConvertToDateTime(string paymentMonth) 
         {
-            var month = paymentMonth.Split(" - ");
-            var start = month[0].Split(' ')[0];
+            var month = paymentMonth.Split(" – ");
+            var start = month[0].Split(' ')[1];
             var startMonth = 1;
-            var endDay = 28;
-
+            var endDay = int.Parse(month[1].Split(' ')[0]);
+            
             switch (start)
             {
                 case "January":

@@ -18,5 +18,6 @@ namespace PayslipLogic
         public const decimal B5Lower = 180001;
         public const decimal B5Cents = (decimal) 0.45;
         public const decimal B5Base = 54232;
+        
     }
 }

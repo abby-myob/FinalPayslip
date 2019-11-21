@@ -1,9 +1,7 @@
 using System.Collections.Generic;
-using Csv;
 using PayslipLogic;
-using CsvReader = PayslipConsole.CsvReader;
 
-namespace PayslipCSV
+namespace PayslipConsole
 {
     public class PayslipCsvManager
     {

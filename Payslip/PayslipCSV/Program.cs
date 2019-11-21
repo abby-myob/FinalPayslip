@@ -1,11 +1,10 @@
-﻿using PayslipCSV;
-using PayslipLogic;
+﻿using PayslipLogic;
 
 namespace PayslipConsole
 {
-    static class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             var inputPath = "/Users/abby.thompson/Development/Acceleration/FinalPayslip/sample_input.csv";
             var outputPath = "/Users/abby.thompson/Development/Acceleration/FinalPayslip/output.csv";
